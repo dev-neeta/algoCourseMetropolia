@@ -1,4 +1,6 @@
-#include <stdio.h>
+//#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 long power(int x, unsigned n)
 {
@@ -22,7 +24,8 @@ int main(void)
     int x = -2;
     unsigned n = 10;
 
-    printf("pow(%d, %d) = %d", x, n, power(x, n));
+    //printf("pow(%d, %d) = %d", x, n, power(x, n));
+    cout<<"pow("<<x<<", "<<n<<")"<<"= "<<power(x,n)<<endl;
 
     return 0;
 }
