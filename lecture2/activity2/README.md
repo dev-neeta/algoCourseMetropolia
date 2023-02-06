@@ -39,22 +39,40 @@ Refer to the first [link](#links).
     }
     ```
 - What is the complexity of the algorithm?
-    - Constant complexity
+    - Constant complexity represented by O(1)
 
 ## Task 3
 
 Refer to the first [link](#links).
 
 - Write a simple program that displays all items in a list to the console.
+    ```
+    #include <iostream>
+    using namespace std;
+
+    int main(){
+        int list[5] ={1,2,3,4,5};
+        for(int item:list){
+            cout<<item<< " \n";
+        }
+    }
+    ```
 - What is the complexity of the algorithm?
+    - Linear complexity represented by O(n)
 
 ## Task 4: : Individual, at home
 
 Refer to this [pdf](./big_o.pdf):
 
 - What is the difference between complexity and performance:
+    - Performance of an algorithm refers to the amount of time/memory/disk space is actually used when a program is run. This depends on machine, compiler, etc. was well as the code.
+    - Complexity refers to examining how do the resource requirements of a program or algorithm scale, i.e. what happens as the size of the problem being solved gets larger?
+
 - Does complexity affects performance bor is it the other way around?
+    - Complexity affects performance but not the other way around.
+
 - Restate the formal definition of big $O$ in plain English
+    - Big O is used to evaluate the efficiency of a program in terms of the time it takes to execute a program as the size of input increases.
 
 ## Links
 
